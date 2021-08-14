@@ -1,0 +1,27 @@
+mysql:
+  hostname: "localhost"
+  port: "3306"
+  username: "root"
+  password: "824196"
+  dbname: "test"
+
+QiNiuYun:
+  AccessKey: PtLX25VuilPUO6cx16nd4aC9K-zkxJ-QaKbAQsO8
+  SecretKey: Qi97XLdyfNC0txR2cLiC2pLYq_lllS2MYmtYUr0i
+  BucketName: codegongbing
+  StorageZone: ZoneHuanan
+  UseHTTPS: false
+  UseCdnDomains: true
+  CdnPath: http://images.codegongbing.cn
+
+Aliyun:
+  Url: "https://codegongbing-blog.oss-cn-beijing.aliyuncs.com"
+  Endpoint: "oss-cn-beijing.aliyuncs.com"
+  AccessKeyId: "LTAI5tPw5MCyHApgPHqCx9Uy"
+  AccessKeySecret: "PRbgIIurjLmiBj6Vaujd2oaal6xHUJ"
+  BucketName: "codegongbing-blog"
+
+Redis:
+  Addr: "1.15.140.44:6379"
+  Password: "824196"
+  DB: 0
