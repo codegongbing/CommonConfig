@@ -1,23 +1,17 @@
 package router
 
 import (
+	v1 "CommonConfig/api/v1"
 	"github.com/gin-gonic/gin"
-	"net/http"
 )
 
 type BaseRouter struct{}
 
 func (*BaseRouter) BaseRouterGroup(r *gin.RouterGroup) {
 	baseGroup := r.Group("base")
+	var baseApi = v1.ApiGroupApp.BaseApi
 	{
-		baseGroup.GET(
-			"/test", func(c *gin.Context) {
-				c.JSON(
-					http.StatusOK, gin.H{
-						"test": "base",
-					},
-				)
-			},
-		)
+		baseGroup.POST("/test", baseApi.Test)
+		baseGroup.GET("", baseApi.Test2)
 	}
 }

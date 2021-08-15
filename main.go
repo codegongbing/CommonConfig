@@ -3,12 +3,19 @@ package main
 import (
 	"CommonConfig/core"
 	"CommonConfig/global"
-	"fmt"
 )
 
+
+
+// @title Swagger Example API
+// @version 0.0.1
+// @description This is a sample Server pets
+// @securityDefinitions.apikey ApiKeyAuth
+// @in header
+// @name x-token
+// @BasePath /
 func main() {
 	global.VIPER = core.Viper("config.toml")
 	global.LOG = core.Zap()
-	fmt.Println(global.CONFIG.Zap)
 	core.Server()
 }

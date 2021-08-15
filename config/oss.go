@@ -8,6 +8,7 @@ type QiNiu struct {
 	UseHTTPS      bool   `json:"use-https" yaml:"use-https" mapstructure:"use-https"`
 	UseCdnDomains bool   `json:"use-cdn-domains" yaml:"use-cdn-domains" mapstructure:"use-cdn-domains"`
 	CdnPath       string `json:"cdn-path" yaml:"cdn-path" mapstructure:"cdn-path"`
+	DatePath      bool   `json:"date-path" yaml:"date-path" mapstructure:"date-path"`
 }
 
 type AliyunOSS struct {
@@ -16,4 +17,5 @@ type AliyunOSS struct {
 	AccessKeyId     string `json:"access-key-id" yaml:"access-key-id" mapstructure:"access-key-id"`
 	AccessKeySecret string `json:"access-key-secret" yaml:"access-key-secret" mapstructure:"access-key-secret"`
 	BucketName      string `json:"bucket-name" yaml:"bucket-name" mapstructure:"bucket-name"`
+	DatePath        bool   `json:"date-path" yaml:"date-path" mapstructure:"date-path"`
 }

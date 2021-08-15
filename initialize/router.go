@@ -1,6 +1,7 @@
 package initialize
 
 import (
+	_ "CommonConfig/docs"
 	"CommonConfig/global"
 	"CommonConfig/router"
 	"github.com/gin-contrib/cors"
