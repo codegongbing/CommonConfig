@@ -1,0 +1,8 @@
+[Test]2021/08/15-11:44:50.557	[34mINFO[0m	initialize/router.go:16	register swagger handler
+[Test]2021/08/15-11:44:50.649	[34mINFO[0m	initialize/redis.go:23	redis connect ping response:	{"pong": "PONG"}
+[Test]2021/08/15-11:44:50.653	[34mINFO[0m	internal/logger.go:139	[35m/home/codegongbing/Project/GoLandProject/CommonConfig/initialize/gorm.go:23
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp [::1]:3306: connect: connection refused
+[Test]2021/08/15-11:44:50.653	[34mINFO[0m	core/server.go:18	server run success on 	{"address": "9090"}
+[Test]2021/08/15-11:47:39.749	[34mINFO[0m	initialize/router.go:16	register swagger handler
+[Test]2021/08/15-11:47:39.840	[34mINFO[0m	initialize/redis.go:23	redis connect ping response:	{"pong": "PONG"}
+[Test]2021/08/15-11:47:40.025	[34mINFO[0m	core/server.go:18	server run success on 	{"address": "9090"}

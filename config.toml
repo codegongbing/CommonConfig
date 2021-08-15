@@ -10,6 +10,44 @@ format = "console"
 prefix = "[Test]"
 director = "log"
 showLine = true
-encode-level = "LowercaseColorLevelEncoder"
+# CapitalLevelEncoder:大写编码器 CapitalColorLevelEncoder:大写编码器带颜色
+# LowercaseLevelEncoder:小写编码器 LowercaseColorLevelEncoder:小写编码器
+encode-level = "CapitalColorLevelEncoder"
 stacktrace-key = "stacktrace"
 log-in-console = true
+
+[mysql]
+hostname = "1.15.140.44"
+port = "3306"
+username = "root"
+password = "824196"
+dbname = "test"
+    [mysql.personal-config]
+    log-mode = "info" # silent error warn info
+    log-zap = true # 是否使用zap作为gorm的logger
+    skip-default-transaction = false # 是否跳过默认事务
+    table-prefix = "t_" # 表名前缀
+    singular-table = false # 是否使用单数表名
+    max-idle-conn = 10 # 空闲连接池中连接的最大数量
+    max-open-conn = 100 # 打开数据库连接的最大数量
+
+[redis]
+addr = "1.15.140.44:6379"
+password = "824196"
+db = 0
+
+[qiniu]
+access-key = ""
+secret-key = ""
+bucket-name = "codegongbing"
+storage-zone = "ZoneHuanan"
+use-https = false
+use-cdn-domains = true
+cdn-path = "http://images.codegongbing.cn"
+
+[aliyun-oss]
+url = "https://codegongbing-blog.oss-cn-beijing.aliyuncs.com"
+endpoint = "oss-cn-beijing.aliyuncs.com"
+access-key-id = ""
+access-key-secret = ""
+bucket-name = "codegongbing-blog"

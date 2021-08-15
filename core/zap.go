@@ -45,6 +45,7 @@ func Zap() (logger *zap.Logger) {
 	if global.CONFIG.Zap.ShowLine {
 		logger = logger.WithOptions(zap.AddCaller())
 	}
+	fmt.Println("zap加载完成")
 	return logger
 }
 
@@ -88,10 +89,10 @@ func getEncoder() zapcore.Encoder {
 
 // getEncoderCore 获取Encoder的zapcore.Core
 func getEncoderCore() (core zapcore.Core) {
-	writer, err := utils.GetWriteSyncer() // 使用file-rotatelogs进行日志分割
-	if err != nil {
-		fmt.Printf("Get Write Syncer Failed err:%v", err.Error())
-		return
+	writer := utils.GetWriteSyncer() // 使用lumberjack进行日志分割
+
+	if global.CONFIG.Zap.LogInConsole == true {
+		writer = zapcore.NewMultiWriteSyncer(writer, zapcore.AddSync(os.Stdout))
 	}
 	return zapcore.NewCore(getEncoder(), writer, level)
 }
