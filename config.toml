@@ -17,11 +17,11 @@ stacktrace-key = "stacktrace"
 log-in-console = true
 
 [mysql]
-hostname = "1.15.140.44"
-port = "3306"
-username = "root"
-password = "824196"
-dbname = "test"
+hostname = ""
+port = ""
+username = ""
+password = ""
+dbname = ""
 [mysql.personal-config]
 log-mode = "info" # silent error warn info
 log-zap = true # 是否使用zap作为gorm的logger
@@ -32,8 +32,8 @@ max-idle-conn = 10 # 空闲连接池中连接的最大数量
 max-open-conn = 100 # 打开数据库连接的最大数量
 
 [redis]
-addr = "1.15.140.44:6379"
-password = "824196"
+addr = ""
+password = ""
 db = 0
 
 [qiniu]
