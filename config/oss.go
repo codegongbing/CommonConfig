@@ -1,5 +1,10 @@
 package config
 
+type Local struct {
+	Path     string `json:"path" yaml:"path" mapstructure:"path"`
+	DatePath bool   `json:"date-path" yaml:"date-path" mapstructure:"date-path"`
+}
+
 type QiNiu struct {
 	AccessKey     string `json:"access-key" yaml:"access-key" mapstructure:"access-key"`
 	SecretKey     string `json:"secret-key" yaml:"secret-key" mapstructure:"secret-key"`

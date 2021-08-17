@@ -1,0 +1,15 @@
+[Test]2021/08/17-09:54:49.306	[34mINFO[0m	initialize/router.go:17	register swagger handler
+[Test]2021/08/17-09:54:49.398	[34mINFO[0m	initialize/redis.go:23	redis connect ping response:	{"pong": "PONG"}
+[Test]2021/08/17-09:54:49.568	[34mINFO[0m	core/server.go:18	server run success on 	{"address": "9090"}
+[Test]2021/08/17-09:56:40.320	[34mINFO[0m	initialize/router.go:17	register swagger handler
+[Test]2021/08/17-09:56:40.404	[34mINFO[0m	initialize/redis.go:23	redis connect ping response:	{"pong": "PONG"}
+[Test]2021/08/17-09:56:40.564	[34mINFO[0m	core/server.go:18	server run success on 	{"address": "9090"}
+[Test]2021/08/17-09:57:36.004	[34mINFO[0m	initialize/router.go:17	register swagger handler
+[Test]2021/08/17-09:57:36.085	[34mINFO[0m	initialize/redis.go:23	redis connect ping response:	{"pong": "PONG"}
+[Test]2021/08/17-09:57:36.243	[34mINFO[0m	core/server.go:19	server run success on 	{"address": "9090"}
+[Test]2021/08/17-09:57:53.175	[34mINFO[0m	initialize/router.go:17	register swagger handler
+[Test]2021/08/17-09:57:53.266	[34mINFO[0m	initialize/redis.go:23	redis connect ping response:	{"pong": "PONG"}
+[Test]2021/08/17-09:57:53.444	[34mINFO[0m	core/server.go:19	server run success on 	{"address": "9090"}
+[Test]2021/08/17-17:41:54.227	[34mINFO[0m	initialize/redis.go:23	redis connect ping response:	{"pong": "PONG"}
+[Test]2021/08/17-17:41:54.397	[34mINFO[0m	initialize/router.go:17	register swagger handler
+[Test]2021/08/17-17:41:54.397	[34mINFO[0m	core/server.go:17	server run success on 	{"address": "9090"}

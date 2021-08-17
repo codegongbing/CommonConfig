@@ -1,27 +1,60 @@
+project:
+  port: "9090"
+  # local aliyun-oss qiniu TencentCOS
+  oss-type: "local"
+  relative-path: "/v1"
+
+Zap:
+  # debug info warn error dpanic panic fatal
+  level: "info"
+  format: "console"
+  prefix: "[Test]"
+  director: "log"
+  showLine: true
+  # CapitalLevelEncoder:大写编码器 CapitalColorLevelEncoder:大写编码器带颜色
+  # LowercaseLevelEncoder:小写编码器 LowercaseColorLevelEncoder:小写编码器
+  encode-level: "CapitalColorLevelEncoder"
+  stacktrace-key: "stacktrace"
+  log-in-console: true
+
 mysql:
-  hostname: "localhost"
-  port: "3306"
-  username: "root"
-  password: "824196"
-  dbname: "test"
-
-QiNiuYun:
-  AccessKey: PtLX25VuilPUO6cx16nd4aC9K-zkxJ-QaKbAQsO8
-  SecretKey: Qi97XLdyfNC0txR2cLiC2pLYq_lllS2MYmtYUr0i
-  BucketName: codegongbing
-  StorageZone: ZoneHuanan
-  UseHTTPS: false
-  UseCdnDomains: true
-  CdnPath: http://images.codegongbing.cn
-
-Aliyun:
-  Url: "https://codegongbing-blog.oss-cn-beijing.aliyuncs.com"
-  Endpoint: "oss-cn-beijing.aliyuncs.com"
-  AccessKeyId: "LTAI5tPw5MCyHApgPHqCx9Uy"
-  AccessKeySecret: "PRbgIIurjLmiBj6Vaujd2oaal6xHUJ"
-  BucketName: "codegongbing-blog"
+  hostname: ""
+  port: ""
+  username: ""
+  password: ""
+  dbname: ""
+  personal-config:
+    log-mode: "info" # silent error warn info
+    log-zap: true # 是否使用zap作为gorm的logger
+    skip-default-transaction: false # 是否跳过默认事务
+    table-prefix: "t_" # 表名前缀
+    singular-table: false # 是否使用单数表名
+    max-idle-conn: 10 # 空闲连接池中连接的最大数量
+    max-open-conn: 100 # 打开数据库连接的最大数量
 
 Redis:
-  Addr: "1.15.140.44:6379"
-  Password: "824196"
+  Addr: ""
+  Password: ""
   DB: 0
+
+QiNiuYun:
+  AccessKey: ""
+  SecretKey: ""
+  BucketName: ""
+  StorageZone: ""
+  UseHTTPS: false
+  UseCdnDomains: true
+  CdnPath: ""
+  date-path: true
+
+Aliyun:
+  Url: ""
+  Endpoint: ""
+  AccessKeyId: ""
+  AccessKeySecret: ""
+  BucketName: ""
+  date-path: true
+
+local:
+  path: "file"
+  date-path: true

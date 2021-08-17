@@ -24,8 +24,8 @@ type OSS interface {
 
 func NewOSS() OSS {
 	switch global.CONFIG.Project.OSSType {
-	//case "local":
-	//	return &Local{}
+	case "local":
+		return &Local{}
 	case "qiniu":
 		return &QiNiu{}
 	//case "tencent-cos":

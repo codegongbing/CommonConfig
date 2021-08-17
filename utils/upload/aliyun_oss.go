@@ -15,13 +15,13 @@ type AliyunOSS struct{}
 func (*AliyunOSS) UploadFile(fileHeader *multipart.FileHeader, path ...string) (string, error) {
 	file, err := fileHeader.Open()
 	if err != nil {
-		global.LOG.Error("function fileHeader.Open() Filed", zap.Any("err", err.Error()))
-		return "", errors.New("function fileHeader.Open() Filed, err:" + err.Error())
+		global.LOG.Error("function fileHeader.Open() Failed", zap.Any("err", err.Error()))
+		return "", errors.New("function fileHeader.Open() Failed, err:" + err.Error())
 	}
 	defer func(file multipart.File) {
 		err := file.Close()
 		if err != nil {
-			global.LOG.Error("function file.Close() Filed", zap.Any("err", err.Error()))
+			global.LOG.Error("function file.Close() Failed", zap.Any("err", err.Error()))
 		}
 	}(file)
 	bucket, err := NewBucket()
@@ -51,8 +51,8 @@ func (*AliyunOSS) DeleteFile(key string) error {
 	// 如需删除文件夹，请将objectName设置为对应的文件夹名称。如果文件夹非空，则需要将文件夹下的所有object删除后才能删除该文件夹。
 	err = bucket.DeleteObject(key)
 	if err != nil {
-		global.LOG.Error("AliyunOSS delete file Filed", zap.Any("err", err.Error()))
-		return errors.New("AliyunOSS delete file Filed, err:" + err.Error())
+		global.LOG.Error("AliyunOSS delete file Failed", zap.Any("err", err.Error()))
+		return errors.New("AliyunOSS delete file Failed, err:" + err.Error())
 	}
 	return nil
 }

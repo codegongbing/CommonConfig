@@ -1,0 +1,39 @@
+[Test]2021/08/16-21:41:53.032	[34mINFO[0m	initialize/router.go:17	register swagger handler
+[Test]2021/08/16-21:41:53.119	[34mINFO[0m	initialize/redis.go:23	redis connect ping response:	{"pong": "PONG"}
+[Test]2021/08/16-21:41:53.307	[34mINFO[0m	core/server.go:18	server run success on 	{"address": "9090"}
+[Test]2021/08/16-21:42:03.572	[34mINFO[0m	initialize/router.go:17	register swagger handler
+[Test]2021/08/16-21:42:03.660	[34mINFO[0m	initialize/redis.go:23	redis connect ping response:	{"pong": "PONG"}
+[Test]2021/08/16-21:42:03.835	[34mINFO[0m	core/server.go:18	server run success on 	{"address": "9090"}
+[Test]2021/08/16-21:45:02.651	[34mINFO[0m	initialize/router.go:17	register swagger handler
+[Test]2021/08/16-21:45:02.733	[34mINFO[0m	initialize/redis.go:23	redis connect ping response:	{"pong": "PONG"}
+[Test]2021/08/16-21:45:02.908	[34mINFO[0m	core/server.go:18	server run success on 	{"address": "9090"}
+[Test]2021/08/16-21:45:55.721	[34mINFO[0m	initialize/router.go:17	register swagger handler
+[Test]2021/08/16-21:45:55.806	[34mINFO[0m	initialize/redis.go:23	redis connect ping response:	{"pong": "PONG"}
+[Test]2021/08/16-21:45:55.981	[34mINFO[0m	core/server.go:18	server run success on 	{"address": "9090"}
+[Test]2021/08/16-21:48:07.037	[34mINFO[0m	initialize/router.go:17	register swagger handler
+[Test]2021/08/16-21:48:07.122	[34mINFO[0m	initialize/redis.go:23	redis connect ping response:	{"pong": "PONG"}
+[Test]2021/08/16-21:48:07.301	[34mINFO[0m	core/server.go:18	server run success on 	{"address": "9090"}
+[Test]2021/08/16-21:48:44.669	[34mINFO[0m	initialize/router.go:17	register swagger handler
+[Test]2021/08/16-21:48:44.762	[34mINFO[0m	initialize/redis.go:23	redis connect ping response:	{"pong": "PONG"}
+[Test]2021/08/16-21:48:44.941	[34mINFO[0m	core/server.go:18	server run success on 	{"address": "9090"}
+[Test]2021/08/16-21:49:21.639	[34mINFO[0m	initialize/router.go:17	register swagger handler
+[Test]2021/08/16-21:49:21.728	[34mINFO[0m	initialize/redis.go:23	redis connect ping response:	{"pong": "PONG"}
+[Test]2021/08/16-21:49:21.911	[34mINFO[0m	core/server.go:18	server run success on 	{"address": "9090"}
+[Test]2021/08/16-21:52:12.856	[34mINFO[0m	initialize/router.go:17	register swagger handler
+[Test]2021/08/16-21:52:12.949	[34mINFO[0m	initialize/redis.go:23	redis connect ping response:	{"pong": "PONG"}
+[Test]2021/08/16-21:52:13.124	[34mINFO[0m	core/server.go:18	server run success on 	{"address": "9090"}
+[Test]2021/08/16-21:52:17.533	[31mERROR[0m	upload/local.go:34	os.Create() Filed	{"err": "open ./file/local/2021/8/16/daa2cf0c1cf3975e9b14ff1cae86ce0592916311.png: no such file or directory"}
+[Test]2021/08/16-21:56:15.854	[34mINFO[0m	initialize/router.go:17	register swagger handler
+[Test]2021/08/16-21:56:15.946	[34mINFO[0m	initialize/redis.go:23	redis connect ping response:	{"pong": "PONG"}
+[Test]2021/08/16-21:56:16.116	[34mINFO[0m	core/server.go:18	server run success on 	{"address": "9090"}
+[Test]2021/08/16-21:56:21.293	[31mERROR[0m	upload/local.go:34	os.Create() Filed	{"err": "open file/local/2021/8/16/b0f6e214c797cc8d580e5f739c4620ae3f8e8675.png: no such file or directory"}
+[Test]2021/08/16-22:15:44.643	[34mINFO[0m	initialize/router.go:17	register swagger handler
+[Test]2021/08/16-22:15:44.738	[34mINFO[0m	initialize/redis.go:23	redis connect ping response:	{"pong": "PONG"}
+[Test]2021/08/16-22:15:44.916	[34mINFO[0m	core/server.go:18	server run success on 	{"address": "9090"}
+[Test]2021/08/16-22:15:51.495	[31mERROR[0m	upload/local.go:36	os.MkdirAll() Failed	{"err": "mkdir file/local/2021: permission denied"}
+[Test]2021/08/16-22:21:01.331	[34mINFO[0m	initialize/router.go:17	register swagger handler
+[Test]2021/08/16-22:21:01.421	[34mINFO[0m	initialize/redis.go:23	redis connect ping response:	{"pong": "PONG"}
+[Test]2021/08/16-22:21:01.599	[34mINFO[0m	core/server.go:18	server run success on 	{"address": "9090"}
+[Test]2021/08/16-22:28:28.072	[34mINFO[0m	initialize/router.go:17	register swagger handler
+[Test]2021/08/16-22:28:28.169	[34mINFO[0m	initialize/redis.go:23	redis connect ping response:	{"pong": "PONG"}
+[Test]2021/08/16-22:28:28.349	[34mINFO[0m	core/server.go:18	server run success on 	{"address": "9090"}

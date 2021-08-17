@@ -5,11 +5,10 @@ import (
 	"CommonConfig/global"
 )
 
-
-
-// @title Swagger Example API
-// @version 0.0.1
-// @description This is a sample Server pets
+// @title CommonConfig
+// @version v1
+// @description This is a common web project config
+// @license.name Apache 2.0
 // @securityDefinitions.apikey ApiKeyAuth
 // @in header
 // @name x-token

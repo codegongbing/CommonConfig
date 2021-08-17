@@ -32,13 +32,13 @@ type QiNiu struct{}
 func (*QiNiu) UploadFile(fileHeader *multipart.FileHeader, path ...string) (string, error) {
 	file, err := fileHeader.Open()
 	if err != nil {
-		global.LOG.Error("function fileHeader.Open() Filed", zap.Any("err", err.Error()))
-		return "", errors.New("function fileHeader.Open() Filed, err:" + err.Error())
+		global.LOG.Error("function fileHeader.Open() Failed", zap.Any("err", err.Error()))
+		return "", errors.New("function fileHeader.Open() Failed, err:" + err.Error())
 	}
 	defer func(file multipart.File) {
 		err := file.Close()
 		if err != nil {
-			global.LOG.Error("function file.Close() Filed", zap.Any("err", err.Error()))
+			global.LOG.Error("function file.Close() Failed", zap.Any("err", err.Error()))
 		}
 	}(file)
 	putPolicy := storage.PutPolicy{
@@ -64,8 +64,8 @@ func (*QiNiu) UploadFile(fileHeader *multipart.FileHeader, path ...string) (stri
 	fileName := utils.RandomFileName(fileHeader.Filename, path...)
 	err = formUploader.Put(context.Background(), &ret, upToken, fileName, file, fileHeader.Size, &putExtra)
 	if err != nil {
-		global.LOG.Error("function formUploader.Put() Filed", zap.Any("err", err.Error()))
-		return "", errors.New("function formUploader.Put() Filed, err:" + err.Error())
+		global.LOG.Error("function formUploader.Put() Failed", zap.Any("err", err.Error()))
+		return "", errors.New("function formUploader.Put() Failed, err:" + err.Error())
 	}
 
 	return global.CONFIG.Qiniu.CdnPath + "/" + fileName, nil
@@ -86,8 +86,8 @@ func (*QiNiu) DeleteFile(key string) error {
 	bucketManager := storage.NewBucketManager(mac, &cfg)
 	err := bucketManager.Delete(global.CONFIG.Qiniu.BucketName, key)
 	if err != nil {
-		global.LOG.Error("function bucketManager.Delete() Filed", zap.Any("err", err.Error()))
-		return errors.New("function bucketManager.Delete() Filed, err:" + err.Error())
+		global.LOG.Error("function bucketManager.Delete() Failed", zap.Any("err", err.Error()))
+		return errors.New("function bucketManager.Delete() Failed, err:" + err.Error())
 	}
 	return nil
 }

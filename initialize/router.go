@@ -18,12 +18,12 @@ func Router() *gin.Engine {
 
 	routerGroup := router.RouterGroupApp
 	// 公共路由,不需要鉴权
-	publicGroup := r.Group("")
+	publicGroup := r.Group(global.CONFIG.Project.RelativePath)
 	{
 		routerGroup.BaseRouterGroup(publicGroup)
 	}
 	//私有路由,需要鉴权
-	privateGroup := r.Group("")
+	privateGroup := r.Group(global.CONFIG.Project.RelativePath)
 	{
 		routerGroup.AuthorityRouterGroup(privateGroup)
 	}

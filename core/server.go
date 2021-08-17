@@ -10,10 +10,9 @@ import (
 )
 
 func Server() {
-	r := initialize.Router()
 	initialize.Redis()
 	global.GORM = initialize.Gorm()
-
+	r := initialize.Router()
 	port := global.CONFIG.Project.Port
 	global.LOG.Info("server run success on ", zap.String("address", port))
 	{

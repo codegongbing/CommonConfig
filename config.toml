@@ -1,7 +1,8 @@
 [project]
 port = "9090"
 # local aliyun-oss qiniu TencentCOS
-oss-type = "aliyun-oss"
+oss-type = "local"
+relative-path = "/v1"
 
 [Zap]
 # debug info warn error dpanic panic fatal
@@ -52,4 +53,8 @@ endpoint = ""
 access-key-id = ""
 access-key-secret = ""
 bucket-name = ""
+date-path = true
+
+[local]
+path = "file"
 date-path = true
