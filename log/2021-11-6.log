@@ -1,0 +1,27 @@
+[Test]2021/11/06-23:04:06.778	[31mERROR[0m	initialize/redis.go:21	redis connect ping failed, err:	{"err": "dial tcp: address localhost: missing port in address"}
+[Test]2021/11/06-23:04:06.783	[34mINFO[0m	initialize/router.go:17	register swagger handler
+[Test]2021/11/06-23:04:06.800	[34mINFO[0m	core/server.go:17	server run success on 	{"address": "9090"}
+[Test]2021/11/06-23:05:53.286	[31mERROR[0m	initialize/redis.go:21	redis connect ping failed, err:	{"err": "ERR AUTH <password> called without any password configured for the default user. Are you sure your configuration is correct?"}
+[Test]2021/11/06-23:05:53.288	[34mINFO[0m	initialize/router.go:17	register swagger handler
+[Test]2021/11/06-23:05:53.352	[34mINFO[0m	core/server.go:17	server run success on 	{"address": "9090"}
+[Test]2021/11/06-23:06:15.379	[34mINFO[0m	initialize/redis.go:23	redis connect ping response:	{"pong": "PONG"}
+[Test]2021/11/06-23:06:15.381	[34mINFO[0m	initialize/router.go:17	register swagger handler
+[Test]2021/11/06-23:06:15.381	[34mINFO[0m	core/server.go:17	server run success on 	{"address": "9090"}
+[Test]2021/11/06-23:07:05.220	[34mINFO[0m	initialize/redis.go:23	redis connect ping response:	{"pong": "PONG"}
+[Test]2021/11/06-23:07:05.221	[34mINFO[0m	initialize/router.go:17	register swagger handler
+[Test]2021/11/06-23:07:05.222	[34mINFO[0m	core/server.go:17	server run success on 	{"address": "9090"}
+[Test]2021/11/06-23:08:05.964	[34mINFO[0m	initialize/redis.go:23	redis connect ping response:	{"pong": "PONG"}
+[Test]2021/11/06-23:08:05.966	[34mINFO[0m	initialize/router.go:17	register swagger handler
+[Test]2021/11/06-23:08:06.041	[34mINFO[0m	core/server.go:18	server run success on 	{"address": "9090"}
+[Test]2021/11/06-23:09:13.590	[34mINFO[0m	initialize/redis.go:23	redis connect ping response:	{"pong": "PONG"}
+[Test]2021/11/06-23:09:13.591	[34mINFO[0m	initialize/router.go:17	register swagger handler
+[Test]2021/11/06-23:09:13.591	[34mINFO[0m	core/server.go:17	server run success on 	{"address": "9090"}
+[Test]2021/11/06-23:09:42.216	[34mINFO[0m	initialize/redis.go:23	redis connect ping response:	{"pong": "PONG"}
+[Test]2021/11/06-23:09:42.218	[34mINFO[0m	initialize/router.go:17	register swagger handler
+[Test]2021/11/06-23:09:42.294	[34mINFO[0m	core/server.go:18	server run success on 	{"address": "9090"}
+[Test]2021/11/06-23:12:58.213	[34mINFO[0m	initialize/redis.go:23	redis connect ping response:	{"pong": "PONG"}
+[Test]2021/11/06-23:12:58.215	[34mINFO[0m	initialize/router.go:17	register swagger handler
+[Test]2021/11/06-23:12:58.276	[34mINFO[0m	core/server.go:18	server run success on 	{"address": "9090"}
+[Test]2021/11/06-23:13:10.657	[34mINFO[0m	initialize/redis.go:23	redis connect ping response:	{"pong": "PONG"}
+[Test]2021/11/06-23:13:10.659	[34mINFO[0m	initialize/router.go:17	register swagger handler
+[Test]2021/11/06-23:13:10.703	[34mINFO[0m	core/server.go:18	server run success on 	{"address": "9090"}

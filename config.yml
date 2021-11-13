@@ -17,13 +17,21 @@ Zap:
   stacktrace-key: "stacktrace"
   log-in-console: true
 
-mysql:
-  hostname: ""
-  port: ""
-  username: ""
-  password: ""
-  dbname: ""
-  personal-config:
+sql:
+  mysql-config:
+    hostname: "localhost"
+    port: "3306"
+    username: "root"
+    password: "824196"
+    dbname: "blog"
+  postgres-config:
+    hostname: "localhost"
+    port: "5432"
+    username: "postgres"
+    password: "824196"
+    dbname: "test"
+  gorm-config:
+    sql-type: "mysql" # mysql postgresql
     log-mode: "info" # silent error warn info
     log-zap: true # 是否使用zap作为gorm的logger
     skip-default-transaction: false # 是否跳过默认事务

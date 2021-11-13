@@ -11,7 +11,7 @@ import (
 func Viper(path ...string) *viper.Viper {
 	var config string
 	if len(path) == 0 {
-		config = "config.yml"
+		config = "config.toml"
 		fmt.Printf("您未手动设置配置文件,使用默认配置[%s]\n", config)
 	} else {
 		config = path[0]

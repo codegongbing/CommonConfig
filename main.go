@@ -14,7 +14,7 @@ import (
 // @name x-token
 // @BasePath /
 func main() {
-	global.VIPER = core.Viper("config.toml")
+	global.VIPER = core.Viper()
 	global.LOG = core.Zap()
 	core.Server()
 }

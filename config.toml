@@ -17,13 +17,21 @@ encode-level = "CapitalColorLevelEncoder"
 stacktrace-key = "stacktrace"
 log-in-console = true
 
-[mysql]
-hostname = ""
-port = ""
-username = ""
-password = ""
-dbname = ""
-[mysql.personal-config]
+[sql]
+[sql.mysql-config]
+hostname = "localhost"
+port = "3306"
+username = "root"
+password = "824196"
+dbname = "blog"
+[sql.postgres-config]
+hostname = "localhost"
+port = "5432"
+username = "postgres"
+password = "824196"
+dbname = "test"
+[sql.gorm-config]
+sql-type = "postgresql" # mysql postgresql
 log-mode = "info" # silent error warn info
 log-zap = true # 是否使用zap作为gorm的logger
 skip-default-transaction = false # 是否跳过默认事务
@@ -33,7 +41,7 @@ max-idle-conn = 10 # 空闲连接池中连接的最大数量
 max-open-conn = 100 # 打开数据库连接的最大数量
 
 [redis]
-addr = ""
+addr = "localhost:6379"  # ip地址 + 端口
 password = ""
 db = 0
 

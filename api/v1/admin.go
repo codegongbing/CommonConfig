@@ -13,7 +13,7 @@ func (*AdminApi) TestAdmin(c *gin.Context) {
 		http.StatusOK, response.Result{
 			Code: response.SUCCESS,
 			Data: nil,
-			Msg:  "",
+			Msg:  "success",
 		},
 	)
 }
