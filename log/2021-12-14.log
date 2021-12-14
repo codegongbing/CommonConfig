@@ -1,0 +1,6 @@
+[Test]2021/12/14-21:56:26.920	[31mERROR[0m	initialize/redis.go:21	redis connect ping failed, err:	{"err": "NOAUTH Authentication required."}
+[Test]2021/12/14-21:56:26.953	[34mINFO[0m	initialize/router.go:17	register swagger handler
+[Test]2021/12/14-21:56:26.953	[34mINFO[0m	core/server.go:17	server run success on 	{"address": "9090"}
+[Test]2021/12/14-21:58:18.687	[34mINFO[0m	initialize/redis.go:23	redis connect ping response:	{"pong": "PONG"}
+[Test]2021/12/14-21:58:18.700	[34mINFO[0m	initialize/router.go:17	register swagger handler
+[Test]2021/12/14-21:58:18.700	[34mINFO[0m	core/server.go:17	server run success on 	{"address": "9090"}
