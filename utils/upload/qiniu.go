@@ -12,21 +12,13 @@ import (
 	"strings"
 )
 
-var zone = map[string]*storage.Zone{
-	"ZoneHuadong":  &storage.ZoneHuadong,
-	"ZoneHuabei":   &storage.ZoneHuabei,
-	"ZoneHuanan":   &storage.ZoneHuanan,
-	"ZoneBeimei":   &storage.ZoneBeimei,
-	"ZoneXinjiapo": &storage.ZoneXinjiapo,
-}
-
 type QiNiu struct{}
 
 //@author: [codegongbing]
 //@object: *Qiniu
 //@function: UploadFile
 //@description: 上传文件
-//@param: file *multipart.FileHeader
+//@param: file *multipart.FileHeader, path ...string
 //@return: string, error
 
 func (*QiNiu) UploadFile(fileHeader *multipart.FileHeader, path ...string) (string, error) {
@@ -49,10 +41,18 @@ func (*QiNiu) UploadFile(fileHeader *multipart.FileHeader, path ...string) (stri
 		global.CONFIG.Qiniu.SecretKey,
 	)
 	upToken := putPolicy.UploadToken(mac)
+
+	// 获取存储地区
+	zone, err := storage.GetZone(global.CONFIG.Qiniu.AccessKey, global.CONFIG.Qiniu.BucketName)
+	if err != nil {
+		global.LOG.Error("function storage.GetZone Failed", zap.Any("err", err.Error()))
+		return "", errors.New("function storage.GetZone Failed, err:" + err.Error())
+	}
+
 	cfg := storage.Config{
 		UseHTTPS:      global.CONFIG.Qiniu.UseHTTPS,
 		UseCdnDomains: global.CONFIG.Qiniu.UseCdnDomains,
-		Zone:          zone[global.CONFIG.Qiniu.StorageZone],
+		Zone:          zone,
 	}
 	ret := storage.PutRet{}
 	// 构建表单上传的对象
@@ -78,13 +78,21 @@ func (*QiNiu) DeleteFile(key string) error {
 		global.CONFIG.Qiniu.AccessKey,
 		global.CONFIG.Qiniu.SecretKey,
 	)
+
+	// 获取存储地区
+	zone, err := storage.GetZone(global.CONFIG.Qiniu.AccessKey, global.CONFIG.Qiniu.BucketName)
+	if err != nil {
+		global.LOG.Error("function storage.GetZone Failed", zap.Any("err", err.Error()))
+		return errors.New("function storage.GetZone Failed, err:" + err.Error())
+	}
+
 	cfg := storage.Config{
 		UseHTTPS:      global.CONFIG.Qiniu.UseHTTPS,
 		UseCdnDomains: global.CONFIG.Qiniu.UseCdnDomains,
-		Zone:          zone[global.CONFIG.Qiniu.StorageZone],
+		Zone:          zone,
 	}
 	bucketManager := storage.NewBucketManager(mac, &cfg)
-	err := bucketManager.Delete(global.CONFIG.Qiniu.BucketName, key)
+	err = bucketManager.Delete(global.CONFIG.Qiniu.BucketName, key)
 	if err != nil {
 		global.LOG.Error("function bucketManager.Delete() Failed", zap.Any("err", err.Error()))
 		return errors.New("function bucketManager.Delete() Failed, err:" + err.Error())

@@ -1,7 +1,7 @@
 [project]
 port = "9090"
 # local aliyun-oss qiniu TencentCOS
-oss-type = "local"
+oss-type = "qiniu"
 relative-path = "/v1"
 
 [Zap]
@@ -22,14 +22,14 @@ log-in-console = true
 hostname = "localhost"
 port = "3306"
 username = "root"
-password = "824196"
+password = ""
 dbname = "blog"
 [sql.postgres-config]
 hostname = "localhost"
 port = "5432"
 username = "postgres"
-password = "824196"
-dbname = "test"
+password = ""
+dbname = "todo"
 [sql.gorm-config]
 sql-type = "postgresql" # mysql postgresql
 log-mode = "info" # silent error warn info
@@ -52,6 +52,7 @@ bucket-name = ""
 storage-zone = ""
 use-https = false
 use-cdn-domains = true
+# http://
 cdn-path = ""
 date-path = true
 

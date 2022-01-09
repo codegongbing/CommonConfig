@@ -1,0 +1,31 @@
+[Test]2022/01/09-11:03:01.568	[31mERROR[0m	initialize/redis.go:21	redis connect ping failed, err:	{"err": "NOAUTH Authentication required."}
+[Test]2022/01/09-11:03:01.619	[34mINFO[0m	initialize/router.go:17	register swagger handler
+[Test]2022/01/09-11:03:01.619	[34mINFO[0m	core/server.go:17	server run success on 	{"address": "9090"}
+[Test]2022/01/09-11:20:01.890	[31mERROR[0m	initialize/redis.go:21	redis connect ping failed, err:	{"err": "NOAUTH Authentication required."}
+[Test]2022/01/09-11:20:01.895	[34mINFO[0m	initialize/router.go:17	register swagger handler
+[Test]2022/01/09-11:20:01.895	[34mINFO[0m	core/server.go:17	server run success on 	{"address": "9090"}
+[Test]2022/01/09-11:24:01.737	[31mERROR[0m	initialize/redis.go:21	redis connect ping failed, err:	{"err": "NOAUTH Authentication required."}
+[Test]2022/01/09-11:24:01.742	[34mINFO[0m	initialize/router.go:17	register swagger handler
+[Test]2022/01/09-11:24:01.742	[34mINFO[0m	core/server.go:17	server run success on 	{"address": "9090"}
+[Test]2022/01/09-11:33:39.280	[31mERROR[0m	initialize/redis.go:21	redis connect ping failed, err:	{"err": "NOAUTH Authentication required."}
+[Test]2022/01/09-11:33:39.287	[34mINFO[0m	initialize/router.go:17	register swagger handler
+[Test]2022/01/09-11:33:39.287	[34mINFO[0m	core/server.go:17	server run success on 	{"address": "9090"}
+[Test]2022/01/09-11:33:47.692	[31mERROR[0m	upload/qiniu.go:67	function formUploader.Put() Failed	{"err": "query region error, invalid args"}
+[Test]2022/01/09-11:35:50.984	[31mERROR[0m	initialize/redis.go:21	redis connect ping failed, err:	{"err": "NOAUTH Authentication required."}
+[Test]2022/01/09-11:35:50.990	[34mINFO[0m	initialize/router.go:17	register swagger handler
+[Test]2022/01/09-11:35:50.990	[34mINFO[0m	core/server.go:17	server run success on 	{"address": "9090"}
+[Test]2022/01/09-17:23:04.821	[31mERROR[0m	initialize/redis.go:21	redis connect ping failed, err:	{"err": "NOAUTH Authentication required."}
+[Test]2022/01/09-17:23:04.826	[34mINFO[0m	initialize/router.go:17	register swagger handler
+[Test]2022/01/09-17:23:04.826	[34mINFO[0m	core/server.go:17	server run success on 	{"address": "9090"}
+[Test]2022/01/09-17:30:14.753	[31mERROR[0m	initialize/redis.go:21	redis connect ping failed, err:	{"err": "NOAUTH Authentication required."}
+[Test]2022/01/09-17:30:14.758	[34mINFO[0m	initialize/router.go:17	register swagger handler
+[Test]2022/01/09-17:30:14.758	[34mINFO[0m	core/server.go:17	server run success on 	{"address": "9090"}
+[Test]2022/01/09-17:30:32.042	[31mERROR[0m	initialize/redis.go:21	redis connect ping failed, err:	{"err": "NOAUTH Authentication required."}
+[Test]2022/01/09-17:30:32.047	[34mINFO[0m	initialize/router.go:17	register swagger handler
+[Test]2022/01/09-17:30:32.047	[34mINFO[0m	core/server.go:17	server run success on 	{"address": "9090"}
+[Test]2022/01/09-17:32:10.202	[31mERROR[0m	initialize/redis.go:21	redis connect ping failed, err:	{"err": "NOAUTH Authentication required."}
+[Test]2022/01/09-17:32:10.207	[34mINFO[0m	initialize/router.go:17	register swagger handler
+[Test]2022/01/09-17:32:10.207	[34mINFO[0m	core/server.go:17	server run success on 	{"address": "9090"}
+[Test]2022/01/09-17:33:58.185	[31mERROR[0m	initialize/redis.go:21	redis connect ping failed, err:	{"err": "NOAUTH Authentication required."}
+[Test]2022/01/09-17:33:58.191	[34mINFO[0m	initialize/router.go:17	register swagger handler
+[Test]2022/01/09-17:33:58.191	[34mINFO[0m	core/server.go:17	server run success on 	{"address": "9090"}

@@ -1,0 +1,39 @@
+[Test]2022/01/08-10:30:55.848	[31mERROR[0m	initialize/redis.go:21	redis connect ping failed, err:	{"err": "dial tcp [::1]:6379: connect: connection refused"}
+[Test]2022/01/08-10:30:55.860	[34mINFO[0m	internal/logger.go:139	[35m/Users/codegongbing/Project/GolandProjects/CommonConfig/initialize/gorm.go:72
+[0m[31m[error] [0mfailed to initialize database, got error failed to connect to `host=localhost user=postgres database=test`: server error (FATAL: database "test" does not exist (SQLSTATE 3D000))
+[Test]2022/01/08-10:31:35.119	[31mERROR[0m	initialize/redis.go:21	redis connect ping failed, err:	{"err": "NOAUTH Authentication required."}
+[Test]2022/01/08-10:31:35.127	[34mINFO[0m	internal/logger.go:139	[35m/Users/codegongbing/Project/GolandProjects/CommonConfig/initialize/gorm.go:72
+[0m[31m[error] [0mfailed to initialize database, got error failed to connect to `host=localhost user=postgres database=test`: server error (FATAL: database "test" does not exist (SQLSTATE 3D000))
+[Test]2022/01/08-10:31:49.417	[34mINFO[0m	initialize/redis.go:23	redis connect ping response:	{"pong": "PONG"}
+[Test]2022/01/08-10:31:49.423	[34mINFO[0m	internal/logger.go:139	[35m/Users/codegongbing/Project/GolandProjects/CommonConfig/initialize/gorm.go:72
+[0m[31m[error] [0mfailed to initialize database, got error failed to connect to `host=localhost user=postgres database=test`: server error (FATAL: database "test" does not exist (SQLSTATE 3D000))
+[Test]2022/01/08-10:32:10.914	[34mINFO[0m	initialize/redis.go:23	redis connect ping response:	{"pong": "PONG"}
+[Test]2022/01/08-10:32:10.921	[34mINFO[0m	internal/logger.go:139	[35m/Users/codegongbing/Project/GolandProjects/CommonConfig/initialize/gorm.go:72
+[0m[31m[error] [0mfailed to initialize database, got error failed to connect to `host=localhost user=postgres database=test`: server error (FATAL: database "test" does not exist (SQLSTATE 3D000))
+[Test]2022/01/08-10:32:40.887	[34mINFO[0m	initialize/redis.go:23	redis connect ping response:	{"pong": "PONG"}
+[Test]2022/01/08-10:32:40.894	[34mINFO[0m	internal/logger.go:139	[35m/Users/codegongbing/Project/GolandProjects/CommonConfig/initialize/gorm.go:72
+[0m[31m[error] [0mfailed to initialize database, got error failed to connect to `host=localhost user=postgres database=test`: server error (FATAL: database "test" does not exist (SQLSTATE 3D000))
+[Test]2022/01/08-10:33:02.680	[34mINFO[0m	initialize/redis.go:23	redis connect ping response:	{"pong": "PONG"}
+[Test]2022/01/08-10:33:02.710	[34mINFO[0m	initialize/router.go:17	register swagger handler
+[Test]2022/01/08-10:33:02.710	[34mINFO[0m	core/server.go:17	server run success on 	{"address": "9090"}
+[Test]2022/01/08-10:35:59.291	[34mINFO[0m	initialize/redis.go:23	redis connect ping response:	{"pong": "PONG"}
+[Test]2022/01/08-10:35:59.297	[34mINFO[0m	initialize/router.go:18	register swagger handler
+[Test]2022/01/08-10:35:59.297	[34mINFO[0m	core/server.go:17	server run success on 	{"address": "9090"}
+[Test]2022/01/08-10:36:13.666	[34mINFO[0m	initialize/redis.go:23	redis connect ping response:	{"pong": "PONG"}
+[Test]2022/01/08-10:36:13.671	[34mINFO[0m	initialize/router.go:17	register swagger handler
+[Test]2022/01/08-10:36:13.671	[34mINFO[0m	core/server.go:17	server run success on 	{"address": "9090"}
+[Test]2022/01/08-10:36:14.823	[34mINFO[0m	initialize/redis.go:23	redis connect ping response:	{"pong": "PONG"}
+[Test]2022/01/08-10:36:14.829	[34mINFO[0m	initialize/router.go:17	register swagger handler
+[Test]2022/01/08-10:36:14.829	[34mINFO[0m	core/server.go:17	server run success on 	{"address": "9090"}
+[Test]2022/01/08-10:36:46.270	[34mINFO[0m	initialize/redis.go:23	redis connect ping response:	{"pong": "PONG"}
+[Test]2022/01/08-10:36:46.276	[34mINFO[0m	initialize/router.go:17	register swagger handler
+[Test]2022/01/08-10:36:46.276	[34mINFO[0m	core/server.go:17	server run success on 	{"address": "9090"}
+[Test]2022/01/08-10:36:56.471	[34mINFO[0m	initialize/redis.go:23	redis connect ping response:	{"pong": "PONG"}
+[Test]2022/01/08-10:36:56.476	[34mINFO[0m	initialize/router.go:17	register swagger handler
+[Test]2022/01/08-10:36:56.476	[34mINFO[0m	core/server.go:17	server run success on 	{"address": "9090"}
+[Test]2022/01/08-10:38:32.893	[34mINFO[0m	initialize/redis.go:23	redis connect ping response:	{"pong": "PONG"}
+[Test]2022/01/08-10:38:32.897	[34mINFO[0m	initialize/router.go:17	register swagger handler
+[Test]2022/01/08-10:38:32.897	[34mINFO[0m	core/server.go:17	server run success on 	{"address": "9090"}
+[Test]2022/01/08-10:39:06.567	[34mINFO[0m	initialize/redis.go:23	redis connect ping response:	{"pong": "PONG"}
+[Test]2022/01/08-10:39:06.573	[34mINFO[0m	initialize/router.go:17	register swagger handler
+[Test]2022/01/08-10:39:06.573	[34mINFO[0m	core/server.go:17	server run success on 	{"address": "9090"}

@@ -1,7 +1,7 @@
 package service
 
 type ServiceGroup struct {
-	JwtService
+	//JwtService
 }
 
 var ServiceGroupApp = new(ServiceGroup)

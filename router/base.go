@@ -12,6 +12,5 @@ func (*BaseRouter) BaseRouterGroup(r *gin.RouterGroup) {
 	baseApi := v1.ApiGroupApp.BaseApi
 	{
 		baseGroup.POST("/test", baseApi.Test)
-		baseGroup.GET("", baseApi.Test2)
 	}
 }

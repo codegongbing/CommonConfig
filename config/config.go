@@ -8,6 +8,6 @@ type Server struct {
 	Sql       Sql       `mapstructure:"sql" json:"sql" yaml:"sql"`
 	Local     Local     `mapstructure:"local" json:"local" yaml:"local"`
 	Qiniu     QiNiu     `mapstructure:"qiniu" json:"qiniu" yaml:"qiniu"`
-	AliyunOSS AliyunOSS `mapstructure:"aliyun-oss" json:"aliyunOSS" yaml:"aliyun-oss"`
-	//TencentCOS TencentCOS `mapstructure:"tencent-cos" json:"tencentCOS" yaml:"tencent-cos"`
+	AliyunOSS AliyunOSS `mapstructure:"aliyun-oss" json:"aliyun-oss" yaml:"aliyun-oss"`
+	//TencentCOS TencentCOS `mapstructure:"tencent-cos" json:"tencent-cos" yaml:"tencent-cos"`
 }
